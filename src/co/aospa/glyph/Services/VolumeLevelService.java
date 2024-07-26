@@ -133,7 +133,7 @@ public class VolumeLevelService extends Service {
                 mThreadHandler.post(() -> {
                     AnimationManager.playVolume((int) (Math.floor(100D / getMaxVolume() * getCurrentVolume())), false);
                 });
-                mThreadHandler.postDelayed(dismissVolume, 1360);
+                mThreadHandler.postDelayed(dismissVolume, 3000);
                 previousVolume = getCurrentVolume();
             }
         }
